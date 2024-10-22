@@ -1,0 +1,70 @@
+/* Estilos del popup modal */
+.adopcion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro transparente */
+    z-index: 1000; /* Asegura que esté sobre todos los demás elementos */
+}
+
+.adopcion-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    position: relative;
+}
+
+.adopcion-content h2 {
+    margin-top: 0;
+}
+
+.adopcion-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.adopcion-content label {
+    font-weight: bold;
+}
+
+.adopcion-content input,
+.adopcion-content textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.adopcion-content button {
+    padding: 10px 15px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.adopcion-content button:hover {
+    background-color: #2563eb;
+}
+
+/* Botón de cerrar el popup */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}

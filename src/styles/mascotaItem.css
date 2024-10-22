@@ -1,0 +1,91 @@
+/* Estilos para cada tarjeta de mascota */
+li {
+    width: calc(30% - 20px); /* Ajustamos para tres tarjetas por fila */
+    background-color: #f1f5f9; /* Fondo claro inicial */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animación en hover */
+    display: flex;
+    flex-direction: column; /* Alineamos el contenido verticalmente */
+    align-items: center; /* Centramos el contenido */
+    text-align: center; /* Alineación del texto */
+    min-height: 450px; /* Altura mínima para alinear los textos */
+}
+
+/* Alternamos colores de fondo */
+li:nth-child(even) {
+    background-color: #e0f7fa; /* Color de fondo alternado */
+}
+
+li:nth-child(odd) {
+    background-color: #e3f2fd; /* Otro color para alternar */
+}
+
+li:hover {
+    transform: translateY(-5px); /* Efecto de elevación al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más profunda en hover */
+}
+
+/* Estilo para la imagen de la mascota */
+li img {
+    width: 100%;
+    height: auto; /* Ajustamos la altura para mantener la proporción */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    height: 400px; /* Limitamos la altura máxima de la imagen */
+}
+
+/* Estilos de texto dentro de la tarjeta */
+li h3 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 10px;
+    margin-top: auto; /* Empujamos hacia abajo para alinear uniformemente */
+}
+
+/* Alternamos el color de los bordes, fondo y hacemos los párrafos de ancho completo */
+li p:nth-child(even) {
+    border: 2px solid #42a5f5; /* Borde azul claro */
+    background-color: #e3f2fd; /* Fondo azul claro */
+    padding: 5px;
+    border-radius: 6px;
+    width: 100%; /* Ancho completo */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+li p:nth-child(odd) {
+    border: 2px solid #26a69a; /* Borde verde azulado */
+    background-color: #e0f7fa; /* Fondo verde claro */
+    padding: 5px;
+    border-radius: 6px;
+    width: 100%; /* Ancho completo */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+#info-container{
+    width: 100%;
+}
+
+/* Botón de adopción */
+.adopt-button {
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 15px; /* Asegura que el botón no esté pegado al contenido anterior */
+}
+
+.adopt-button:hover {
+    background-color: #2563eb;
+}
+
+
+
+

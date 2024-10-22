@@ -1,0 +1,90 @@
+/* Estilos para el formulario */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    padding: 20px;
+    background-color: #f9fafb; /* Fondo claro */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  }
+  
+  /* Estilo para las etiquetas */
+  label {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Estilo para los selectores */
+  select {
+    padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+    transition: border-color 0.3s ease;
+  }
+  
+  select:focus {
+    border-color: #3b82f6; /* Azul suave cuando se enfoca */
+    outline: none;
+  }
+  
+  /* Estilo para el rango */
+  input[type="range"] {
+    width: 150px;
+    height: 6px;
+    background: #d1d5db;
+    border-radius: 4px;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="range"]:focus {
+    background-color: #3b82f6; /* Cambia el color al enfocar */
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    width: 16px;
+    height: 16px;
+    background: #3b82f6; /* Azul del control */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: #3b82f6;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Estilo del valor de la edad */
+  #edad-max {
+    font-size: 14px;
+    color: #3b82f6; /* Azul suave */
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Estilo del botón */
+  button {
+    padding: 10px 20px;
+    background-color: #3b82f6; /* Azul */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2563eb; /* Azul más oscuro al hacer hover */
+  }
+  
